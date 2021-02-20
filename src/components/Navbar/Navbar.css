@@ -17,10 +17,23 @@ nav{
     height: 100%;
     cursor: pointer;
 }
-.mobile-navicon{
-
+.mobile-menu-icon{
+    display: none;
 }
 .menu-items{
     display: flex;
     align-items: center;
+}
+
+@media screen and (max-width:768px){
+    .menu-items, .signup-button{
+        display: none;
+    }
+    .mobile-menu-icon{
+        display: block;
+        color: white;
+        display: flex;
+        align-items: center;
+        font-size: 4vh;
+    }
 }

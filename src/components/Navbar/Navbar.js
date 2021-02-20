@@ -3,12 +3,14 @@ import { Link } from 'react-router-dom'
 import { Button } from '../Button/Button'
 import { menuData } from './MenuItems'
 import './Navbar.css'
+import { FaBars } from 'react-icons/fa'
+
 
 const Navbar = () => {
     return (
         <nav>
             <Link to="/" className="link">ELIXR</Link>
-            <i className="mobile-navicon">MenuBars</i>
+            <div className="mobile-menu-icon"><FaBars /></div>
             <div className="menu-items">
                 {menuData.map((item, index) => (
                     <Link className="link" to={item.link} key={index}>
@@ -16,11 +18,13 @@ const Navbar = () => {
                     </Link>
                 ))}
             </div>
-            <Button
-                buttonStyle='btn--outline'
-            >
-                SIGN UP
-            </Button>
+            <div className="signup-button">
+                <Button
+                    buttonStyle='btn--outline'
+                >
+                    SIGN UP
+                </Button>
+            </div>
         </nav>
     )
 }
