@@ -20,7 +20,7 @@ const Navbar = () => {
             </div>
             <div className="signup-button">
                 <Button
-                    buttonStyle='btn--outline'
+                    buttonStyle='btn--outline' to='/signup'
                 >
                     SIGN UP
                 </Button>
