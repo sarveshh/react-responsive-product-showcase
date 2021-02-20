@@ -5,9 +5,9 @@ import { Button } from '../Button/Button'
 import { FaTimes } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 
-const Sidebar = () => {
+const Sidebar = ({ isOpen, toggle }) => {
     return (
-        <div className="sidebar-container">
+        <div className="sidebar-container" isOpen={isOpen} onClick={toggle}>
             <div className="icon">
                 <FaTimes className="close-icon" />
             </div>
@@ -20,7 +20,7 @@ const Sidebar = () => {
                     ))}
                 </div>
                 <div className="button-wrap">
-                    <Button buttonStyle='btn--outline' to="/contact">
+                    <Button buttonStyle='btn--filled' to="/contact">
                         Contact Us
                     </Button>
                 </div>

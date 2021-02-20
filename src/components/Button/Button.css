@@ -20,7 +20,7 @@
     border: 1px solid var(--primary)
 }
 .btn--filled{
-    background-color: olive;
+    background-color: rgba(56, 42, 179, 0.726);
     color: white;
     border: 1px solid var(--primary);
     max-width:160px

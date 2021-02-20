@@ -6,11 +6,13 @@ import './Navbar.css'
 import { FaBars } from 'react-icons/fa'
 
 
-const Navbar = () => {
+const Navbar = ({ toggle }) => {
     return (
         <nav>
             <Link to="/" className="link">ELIXR</Link>
-            <div className="mobile-menu-icon"><FaBars /></div>
+            <div className="mobile-menu-icon">
+                <FaBars onClick={toggle} />
+            </div>
             <div className="menu-items">
                 {menuData.map((item, index) => (
                     <Link className="link" to={item.link} key={index}>
