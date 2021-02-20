@@ -7,16 +7,15 @@ import { Link } from 'react-router-dom'
 
 const Sidebar = ({ isOpen, toggle }) => {
 
-    let opacityStyling = {
-        opacity: 1,
-        top: '0'
-    }
+    let opacityClasses = ['sidebar-container'];
     if (isOpen) {
-        opacityStyling.opacity = 0;
-        opacityStyling.top = '-100%'
+        opacityClasses.push('opacity-on')
+    } else {
+        opacityClasses.push('opacity-off')
     }
+
     return (
-        <div className="sidebar-container" style={opacityStyling} isOpen={isOpen} onClick={toggle}>
+        <div className={opacityClasses.join(' ')} isOpen={isOpen} onClick={toggle}>
             <div className="icon">
                 <FaTimes className="close-icon" onClick={toggle} />
             </div>

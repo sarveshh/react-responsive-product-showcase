@@ -6,11 +6,16 @@
     background: #000d1a;
     display: grid;
     align-items: center;
-    top: 0;
     left: 0;
     transition: 0.3s ease-in-out;
-    opacity: 0;
+}
+.opacity-on{
+    opacity: 1;
     top: 0;
+}
+.opacity-off{
+    opacity: 0;
+    top: -100%;
 }
 .icon{
     position: absolute;
