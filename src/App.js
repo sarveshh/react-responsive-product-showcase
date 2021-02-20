@@ -15,8 +15,8 @@ function App() {
   return (
     <div className="App">
       <Navbar toggle={toggle} />
-      <Hero slides={SliderData} toggle={toggle} />
-      <Sidebar />
+      <Sidebar isOpen={isOpen} toggle={toggle} />
+      <Hero slides={SliderData} />
     </div>
   );
 }

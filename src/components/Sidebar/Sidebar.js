@@ -6,10 +6,19 @@ import { FaTimes } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 
 const Sidebar = ({ isOpen, toggle }) => {
+
+    let opacityStyling = {
+        opacity: 1,
+        top: '0'
+    }
+    if (isOpen) {
+        opacityStyling.opacity = 0;
+        opacityStyling.top = '-100%'
+    }
     return (
-        <div className="sidebar-container" isOpen={isOpen} onClick={toggle}>
+        <div className="sidebar-container" style={opacityStyling} isOpen={isOpen} onClick={toggle}>
             <div className="icon">
-                <FaTimes className="close-icon" />
+                <FaTimes className="close-icon" onClick={toggle} />
             </div>
             <div className="sidebar-wrapper">
                 <div className="sidebar-menu">
