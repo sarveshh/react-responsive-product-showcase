@@ -13,7 +13,7 @@ const Hero = ({ slides }) => {
                     return (
                         <div key={index} className="hero-slide">
                             <div className="hero-slider">
-                                <img src="" alt="" className="hero-image" />
+                                <img src={slide.image} alt={slide.alt} className="hero-image" />
                                 <div className="hero-content">
                                     <h1>{slide.title}</h1>
                                     <p>{slide.price}</p>
