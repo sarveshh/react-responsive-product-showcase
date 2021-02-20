@@ -2,6 +2,8 @@ import React from 'react'
 import './Hero.css'
 import { SliderData } from './SliderData'
 import { Button } from '../Button/Button'
+import { IoMdArrowRoundForward } from 'react-icons/io'
+import { IoArrowForward, IoArrowBack } from 'react-icons/io5'
 
 const Hero = ({ slides }) => {
     return (
@@ -15,14 +17,19 @@ const Hero = ({ slides }) => {
                                 <div className="hero-content">
                                     <h1>{slide.title}</h1>
                                     <p>{slide.price}</p>
-                                    <Button to={slide.path} buttonStyle='btn--primary'>
+                                    <Button to={slide.path} buttonStyle='btn--filled'>
                                         {slide.label}
+                                        <IoMdArrowRoundForward />
                                     </Button>
                                 </div>
                             </div>
                         </div>
                     )
                 })}
+                <div className="slider-buttons">
+                    <IoArrowForward />
+                    <IoArrowBack className="slider-arrows" />
+                </div>
             </div>
         </section>
     )
