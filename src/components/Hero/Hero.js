@@ -27,8 +27,8 @@ const Hero = ({ slides }) => {
                     )
                 })}
                 <div className="slider-buttons">
-                    <IoArrowForward />
                     <IoArrowBack className="slider-arrows" />
+                    <IoArrowForward className="slider-arrows" />
                 </div>
             </div>
         </section>
