@@ -15,8 +15,8 @@ const Hero = ({ slides }) => {
                             <div className="hero-slider">
                                 <img src={slide.image} alt={slide.alt} className="hero-image" />
                                 <div className="hero-content">
-                                    <h1>{slide.title}</h1>
-                                    <p>{slide.price}</p>
+                                    <h1 className="house-title">{slide.title}</h1>
+                                    <p className="house-price">{slide.price}</p>
                                     <Button to={slide.path} buttonStyle='btn--filled'>
                                         {slide.label}
                                         <IoMdArrowRoundForward />
