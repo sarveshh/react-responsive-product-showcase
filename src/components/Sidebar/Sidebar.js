@@ -14,6 +14,7 @@ const Sidebar = ({ isOpen, toggle }) => {
         opacityClasses.push('opacity-off')
     }
 
+
     return (
         <div className={opacityClasses.join(' ')} isOpen={isOpen} onClick={toggle}>
             <div className="icon">
