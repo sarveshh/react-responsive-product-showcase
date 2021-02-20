@@ -24,17 +24,19 @@ const Hero = ({ slides }) => {
                 {slides.map((slide, index) => {
                     return (
                         <div key={index} className="hero-slide">
-                            <div className="hero-slider">
-                                <img src={slide.image} alt={slide.alt} className="hero-image" />
-                                <div className="hero-content">
-                                    <h1 className="house-title">{slide.title}</h1>
-                                    <p className="house-price">{slide.price}</p>
-                                    <Button to={slide.path} buttonStyle='btn--filled'>
-                                        {slide.label}
-                                        <IoMdArrowRoundForward className="arrow" />
-                                    </Button>
+                            {index === current && (
+                                <div className="hero-slider">
+                                    <img src={slide.image} alt={slide.alt} className="hero-image" />
+                                    <div className="hero-content">
+                                        <h1 className="house-title">{slide.title}</h1>
+                                        <p className="house-price">{slide.price}</p>
+                                        <Button to={slide.path} buttonStyle='btn--filled'>
+                                            {slide.label}
+                                            <IoMdArrowRoundForward className="arrow" />
+                                        </Button>
+                                    </div>
                                 </div>
-                            </div>
+                            )}
                         </div>
                     )
                 })}
