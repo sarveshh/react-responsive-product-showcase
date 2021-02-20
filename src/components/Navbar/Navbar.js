@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { Button } from '../Button/Button'
 import { menuData } from './MenuItems'
 import './Navbar.css'
 
@@ -15,6 +16,11 @@ const Navbar = () => {
                     </Link>
                 ))}
             </div>
+            <Button
+                buttonStyle='btn--outline'
+            >
+                SIGN UP
+            </Button>
         </nav>
     )
 }
