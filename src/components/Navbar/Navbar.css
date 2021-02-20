@@ -35,5 +35,8 @@ nav{
         display: flex;
         align-items: center;
         font-size: 4vh;
+        cursor: pointer;
+        top: 0;
+        right: 0;
     }
 }
