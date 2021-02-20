@@ -1,6 +1,5 @@
-import React, { useState, useRef } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 import './Hero.css'
-import { SliderData } from './SliderData'
 import { Button } from '../Button/Button'
 import { IoMdArrowRoundForward } from 'react-icons/io'
 import { IoArrowForward, IoArrowBack } from 'react-icons/io5'
@@ -12,11 +11,28 @@ const Hero = ({ slides }) => {
     const timeout = useRef(null)
 
     const nextSlide = () => {
+        if (timeout.current) {
+            clearTimeout(timeout.current)
+        }
         setCurrent(current === length - 1 ? 0 : current + 1)
     }
     const prevSlide = () => {
+        if (timeout.current) {
+            clearTimeout(timeout.current)
+        }
         setCurrent(current === 0 ? length - 1 : current - 1)
     }
+    useEffect(() => {
+        const nextSlide = () => {
+            setCurrent(current => (current === length - 1 ? 0 : current + 1))
+        }
+        timeout.current = setTimeout(nextSlide, 3000)
+        return () => {
+            if (timeout.current) {
+                clearTimeout(timeout.current)
+            }
+        }
+    }, [current, length])
 
     return (
         <section>
