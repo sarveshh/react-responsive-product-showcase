@@ -22,3 +22,15 @@ section{
     line-height: 1.4;
     padding: 1rem 2rem;
 }
+.orderClass2{
+    order: 2;
+}
+.orderClass1{
+    order: 1;
+}
+.column-right{
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

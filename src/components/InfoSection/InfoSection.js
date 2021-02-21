@@ -9,10 +9,22 @@ const InfoSection = ({
     reverse,
     image,
 }) => {
+
+    let leftColumnClass = ['column-left'];
+    let rightColumnClass = ['column-right']
+
+    if (reverse) {
+        leftColumnClass.push('orderClass2')
+        rightColumnClass.push('orderClass1')
+    } else {
+        leftColumnClass.push('orderClass1')
+        rightColumnClass.push('orderClass2')
+    }
+
     return (
         <section>
             <div className="info-container">
-                <div className="column-left">
+                <div className={leftColumnClass.join(' ')}>
                     <h1>{heading}</h1>
                     <p>{paragraphOne}</p>
                     <p>{paragraphTwo}</p>
