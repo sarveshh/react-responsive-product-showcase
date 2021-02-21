@@ -1,5 +1,6 @@
 import React from 'react'
 import { Button } from '../Button/Button'
+import './InfoSection.css'
 
 const InfoSection = ({
     heading,
@@ -10,7 +11,7 @@ const InfoSection = ({
     image,
 }) => {
     return (
-        <section>
+        <section className="infosection-section">
             <div className="info-container">
                 <div className="column-left">
                     <h1>{heading}</h1>

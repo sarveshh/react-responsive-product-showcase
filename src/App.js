@@ -15,12 +15,12 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <>
       <Navbar toggle={toggle} />
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Hero slides={SliderData} />
       <InfoSection {...InfoData} />
-    </div>
+    </>
   );
 }
 
