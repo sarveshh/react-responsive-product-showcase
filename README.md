@@ -1,10 +1,10 @@
-<img src="./images/logo.sample.png" alt="Logo of the project" align="right">
+<img src="https://raw.githubusercontent.com/sarveshh/react-responsive-product-showcase/main/logo.png" align="right" width="100px">
 
-# Name of the project &middot; [![Build Status](https://img.shields.io/travis/npm/npm/latest.svg?style=flat-square)](https://travis-ci.org/npm/npm) [![npm](https://img.shields.io/npm/v/npm.svg?style=flat-square)](https://www.npmjs.com/package/npm) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/your/your-project/blob/master/LICENSE)
+# Product-showcase-template &middot; [![Build Status](https://img.shields.io/travis/npm/npm/latest.svg?style=flat-square)](https://travis-ci.org/npm/npm) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/your/your-project/blob/master/LICENSE)
 > Additional information or tag line
 
-A brief description of your project, what it is used for.
-
+Product-showcase-template is exactly what its name suggests
+<!--
 ## Installing / Getting started
 
 A quick introduction of the minimal setup you need to get a hello world up &
@@ -15,6 +15,7 @@ commands here
 ```
 
 Here you should say what actually happens when you execute the code above.
+
 
 ## Developing
 
@@ -98,3 +99,4 @@ Documents your database design and schemas, relations etc...
 ## Licensing
 
 State what the license is and how to find the text version of the license.
+-->
