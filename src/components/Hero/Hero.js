@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react'
-import './Hero.css'
+import './Hero.module.css'
 import { Button } from '../Button/Button'
 import { IoMdArrowRoundForward } from 'react-icons/io'
 import { IoArrowForward, IoArrowBack } from 'react-icons/io5'

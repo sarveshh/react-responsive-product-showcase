@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Navbar from "./components/Navbar/Navbar";
-import './App.css'
+import './App.module.css'
 import Hero from "./components/Hero/Hero";
 import { SliderData } from './components/Hero/SliderData'
 import Sidebar from "./components/Sidebar/Sidebar";

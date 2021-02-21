@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { Button } from '../Button/Button'
 import { menuData } from './MenuItems'
-import './Navbar.css'
+import './Navbar.module.css'
 import { FaBars } from 'react-icons/fa'
 
 

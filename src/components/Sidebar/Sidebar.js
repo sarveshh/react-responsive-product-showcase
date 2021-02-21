@@ -1,5 +1,5 @@
 import React from 'react'
-import './Sidebar.css'
+import './Sidebar.module.css'
 import { menuData } from '../Navbar/MenuItems'
 import { Button } from '../Button/Button'
 import { FaTimes } from 'react-icons/fa'
