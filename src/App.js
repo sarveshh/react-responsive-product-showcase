@@ -12,6 +12,7 @@ function App() {
     setIsOpen(!isOpen)
   }
 
+
   return (
     <>
       <Navbar toggle={toggle} />
