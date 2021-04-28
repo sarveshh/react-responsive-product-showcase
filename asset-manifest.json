@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/react-responsive-product-showcase/static/css/main.8bafbbdb.chunk.css",
+    "main.js": "/react-responsive-product-showcase/static/js/main.63fe79b7.chunk.js",
+    "main.js.map": "/react-responsive-product-showcase/static/js/main.63fe79b7.chunk.js.map",
+    "runtime-main.js": "/react-responsive-product-showcase/static/js/runtime-main.25713466.js",
+    "runtime-main.js.map": "/react-responsive-product-showcase/static/js/runtime-main.25713466.js.map",
+    "static/js/2.fe5141d5.chunk.js": "/react-responsive-product-showcase/static/js/2.fe5141d5.chunk.js",
+    "static/js/2.fe5141d5.chunk.js.map": "/react-responsive-product-showcase/static/js/2.fe5141d5.chunk.js.map",
+    "index.html": "/react-responsive-product-showcase/index.html",
+    "static/css/main.8bafbbdb.chunk.css.map": "/react-responsive-product-showcase/static/css/main.8bafbbdb.chunk.css.map",
+    "static/js/2.fe5141d5.chunk.js.LICENSE.txt": "/react-responsive-product-showcase/static/js/2.fe5141d5.chunk.js.LICENSE.txt",
+    "static/media/house-1.884fd18a.jpg": "/react-responsive-product-showcase/static/media/house-1.884fd18a.jpg",
+    "static/media/house-2.87e56bd0.jpg": "/react-responsive-product-showcase/static/media/house-2.87e56bd0.jpg",
+    "static/media/house-3.2de80645.jpg": "/react-responsive-product-showcase/static/media/house-3.2de80645.jpg",
+    "static/media/house-4.306691d4.jpg": "/react-responsive-product-showcase/static/media/house-4.306691d4.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.25713466.js",
+    "static/js/2.fe5141d5.chunk.js",
+    "static/css/main.8bafbbdb.chunk.css",
+    "static/js/main.63fe79b7.chunk.js"
+  ]
+}
